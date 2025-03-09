@@ -4,124 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foto Grid dengan Frame</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..400display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..400&display=swap" rel="stylesheet"/>
 </head>
 
 <body class="p-8 font-sans bg-blue-100">
-    <h1 class="justify-center px-4 py-2 mx-auto text-4xl font-bold text-center border-4 border-sky-400te-sky-400texe-blocK">My Picture</h1>
+    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center border-4 border-sky-400 px-4 py-2 mx-auto">My Picture</h1>
 
-<section>
-    <div class="container max-w-5xl p-8 mx-auto my-10 bg-yellow-100 ">
-        <div class="grid grid-cols-6 gap-4 mb-8">
-            <div class="col-span-3 overflow-hidden rounded-lg">
-                <img src="img/Picture8.jpg" alt="1" class="object-cover w-full rounded-full h-134">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya sedang menggendong adik perempuan dengan kasih sayang.</p>
+    <section>
+        <div class="container max-w-5xl p-8 mx-auto my-10 bg-yellow-100">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+                <div class="col-span-1 sm:col-span-2 overflow-hidden rounded-lg">
+                    <img src="img/Picture8.jpg" alt="1" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80 rounded-full">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya sedang menggendong adik perempuan dengan kasih sayang.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-span-3 row-span-3 overflow-hidden rounded-lg">
-                <img src="img/Picture.jpg" alt="2" class="object-cover w-full h-284">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya selfie bersama Ibu saat kelulusan sekolah SMK.</p>
+                <div class="col-span-1 sm:col-span-2 md:col-span-2 lg:col-span-2 overflow-hidden rounded-lg">
+                    <img src="img/Picture.jpg" alt="2" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya selfie bersama Ibu saat kelulusan sekolah SMK.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="col-span-3 overflow-hidden rounded-lg">
-                <img src="img/Picture12.jpg" alt="3" class="object-cover w-full h-120">
-                <div class="p-4 bg-slate-300">
-                    <p>Grid foto ini menampilkan saya dan ketiga adik saya, mengabadikan kenangan indah masa kecil.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section>
-    <div class="container max-w-5xl p-8 mx-auto my-10 bg-violet-100 ">
-        <div class="grid grid-cols-9 gap-4 mb-8">
-            <div class="col-span-6 overflow-hidden rounded-lg">
-                <img src="img/Picture3.jpg" alt="4" class="object-cover object-right w-full h-150">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya berfoto bersama guru dan teman-teman SMK.</p>
-                </div>
-            </div>  
-
-            <div class="col-span-3 row-span-1 overflow-hidden rounded-lg">
-                <img src="img/Picture2.jpg" alt="5" class="object-cover w-full rounded-full h-144">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya berada di event dengan memakai bando kelinci yang lucu.</p>
-                </div>
-            </div>
-
-            <div class="col-span-4 row-span-2 overflow-hidden rounded-lg">
-                <img src="img/Picture7.jpg" alt="8" class="object-cover w-full h-161">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya berada di ruang kelas kampus.</p>
-                </div>
-            </div>
-
-            <div class="col-span-5 overflow-hidden rounded-lg">
-                <img src="img/Picture5.jpg" alt="6" class="object-cover object-right w-full h-65">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya berada di Dies Natalis Universitas Mulawarman, menikmati suasana perayaan bersama teman.</p>
-                </div>
-            </div>
-
-            <div class="col-span-5 overflow-hidden rounded-lg">
-                <img src="img/Picture10.jpg" alt="7" class="object-cover object-center w-full h-72">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya sedang menikmati liburan di Mall SCP.</p>
+                <div class="col-span-1 sm:col-span-2 overflow-hidden rounded-lg">
+                    <img src="img/Picture12.jpg" alt="3" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Grid foto ini menampilkan saya dan ketiga adik saya, mengabadikan kenangan indah masa kecil.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section>
-    <div class="container max-w-5xl p-8 mx-auto my-10 bg-pink-100 ">
-        <div class="grid grid-cols-6 gap-4 mb-8">
-            <div class="col-span-3 overflow-hidden rounded-lg">
-                <img src="img/Picture4.jpg" alt="9" class="object-cover w-full rounded-t-full h-148">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya dan teman-teman berfoto bersama setelah selesai melaksanakan kegiatan harddisk 2024.</p>
+    <section>
+        <div class="container max-w-5xl p-8 mx-auto my-10 bg-violet-100">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+                <div class="col-span-1 sm:col-span-2 overflow-hidden rounded-lg">
+                    <img src="img/Picture3.jpg" alt="4" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya berfoto bersama guru dan teman-teman SMK.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-1 overflow-hidden rounded-lg">
+                    <img src="img/Picture2.jpg" alt="5" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80 rounded-full">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya berada di event dengan memakai bando kelinci yang lucu.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-1 sm:col-span-2 overflow-hidden rounded-lg">
+                    <img src="img/Picture7.jpg" alt="8" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya berada di ruang kelas kampus.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-1 sm:col-span-2 overflow-hidden rounded-lg">
+                    <img src="img/Picture5.jpg" alt="6" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya berada di Dies Natalis Universitas Mulawarman, menikmati suasana perayaan bersama teman.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-1 sm:col-span-2 overflow-hidden rounded-lg">
+                    <img src="img/Picture10.jpg" alt="7" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya sedang menikmati liburan di Mall SCP.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-span-3 overflow-hidden rounded-lg">
-                <img src="img/Picture6.jpg" alt="11" class="object-cover w-full h-146">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya sedang berada di dalam ruangan Dies Natalis, berdiri bersama alat musik mengabadikan momen spesial.</p>
-                </div>
-            </div>
-
-            <div class="col-span-3 row-span-1 overflow-hidden rounded-lg">
-                <img src="img/Picture9.jpg" alt="10" class="object-cover object-left w-full h-100">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya sebagai moderator dan temen-temen saya menjelaskan codingan.</p>
-                </div>
-            </div>
-
-            <div class="col-span-3 row-span-2 overflow-hidden rounded-lg">
-                <img src="img/Picture11.jpg" alt="12" class="object-cover w-full h-123">
-                <div class="p-4 bg-slate-300">
-                    <p>Saya sedang berfoto di samping boneka di KKV Mall SCP.</p>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="py-4 text-white bg-gray-950">
-    <div class="container mx-auto text-center">
-        <p class="text-sm">
-            &copy; 2305176070_Muhammad Arifin Bachtiar
-        </p>
-    </div>
-</footer>
+    <section>
+        <div class="container max-w-5xl p-8 mx-auto my-10 bg-pink-100">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+                <div class="col-span-1 sm:col-span-2 overflow-hidden rounded-lg">
+                    <img src="img/Picture4.jpg" alt="9" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80 rounded-t-full">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya dan teman-teman berfoto bersama setelah selesai melaksanakan kegiatan harddisk 2024.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-1 sm:col-span-2 overflow-hidden rounded-lg">
+                    <img src="img/Picture6.jpg" alt="11" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya sedang berada di dalam ruangan Dies Natalis, berdiri bersama alat musik mengabadikan momen spesial.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-1 overflow-hidden rounded-lg">
+                    <img src="img/Picture9.jpg" alt="10" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya sebagai moderator dan teman-teman saya menjelaskan codingan.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-1 sm:col-span-2 overflow-hidden rounded-lg">
+                    <img src="img/Picture11.jpg" alt="12" class="object-cover w-full h-48 sm:h-64 md:h-72 lg:h-80">
+                    <div class="p-4 bg-slate-300">
+                        <p class="text-sm sm:text-base">Saya sedang berfoto di samping boneka di KKV Mall SCP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-white bg-gray-950">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">
+                &copy; 2305176070_Muhammad Arifin Bachtiar
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
